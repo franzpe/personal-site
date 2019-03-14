@@ -1,9 +1,15 @@
 import React from 'react';
 
-import classes from './Home.module.scss';
+import SocialList from '../common/social/SocialList';
 
 function Home() {
-  return <div> This is home </div>;
+  return (
+    <div>
+      <h1>František Poboček</h1>
+      <p>Frontend Web Developer with React</p>
+      <SocialList />
+    </div>
+  );
 }
 
 export default Home;

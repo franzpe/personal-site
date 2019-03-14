@@ -1,0 +1,18 @@
+@import '../../_styles/variables.scss';
+
+.link {
+  text-decoration: none;
+  margin-right: 1em;
+
+  &:hover {
+    color: $focus-color;
+
+    & svg {
+      filter: drop-shadow(0 0 5px $focus-color);
+    }
+  }
+}
+
+.last {
+  margin-right: 0;
+}

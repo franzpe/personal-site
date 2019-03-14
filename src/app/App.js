@@ -3,6 +3,7 @@ import React, { Component, createContext } from 'react';
 import classes from './App.module.scss';
 import Routes from './Routes';
 import Theme from '_utils/Theme';
+import Footer from './Footer';
 
 export const AppContext = createContext({ theme: new Theme() });
 
@@ -17,8 +18,11 @@ class App extends Component {
   render() {
     return (
       <AppContext.Provider>
-        <div>
-          <Routes />
+        <div className={classes.container}>
+          <div className={classes.content}>
+            <Routes />
+          </div>
+          <Footer />
         </div>
       </AppContext.Provider>
     );
