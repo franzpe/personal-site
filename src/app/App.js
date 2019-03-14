@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 
 import classes from './App.module.scss';
+import Routes from './Routes';
 
 class App extends Component {
   render() {
-    return <div>app</div>;
+    return (
+      <div>
+        <Routes />
+      </div>
+    );
   }
 }
 
