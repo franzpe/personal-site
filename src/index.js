@@ -6,10 +6,13 @@ import history from './_utils/history';
 import './index.scss';
 import App from 'app/App';
 import * as serviceWorker from './_utils/serviceWorker';
+import AppContextProvider from './app/AppContextProvider';
 
 ReactDOM.render(
   <Router history={history}>
-    <App />
+    <AppContextProvider>
+      <App />
+    </AppContextProvider>
   </Router>,
   document.getElementById('root')
 );

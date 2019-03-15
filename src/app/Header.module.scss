@@ -1,0 +1,45 @@
+@import '../_styles/variables.scss';
+
+.header {
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media #{$media-size-phone} {
+    flex-direction: row-reverse;
+  }
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 760px;
+  max-width: 100%;
+}
+
+.themeToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.themeToggler {
+  fill: currentColor;
+}
+
+.darkTheme {
+  background: #252627;
+}

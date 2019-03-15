@@ -1,11 +1,10 @@
-import React, { Component, createContext } from 'react';
+import React, { Component } from 'react';
 
 import classes from './App.module.scss';
 import Routes from './Routes';
-import Theme from '_utils/Theme';
 import Footer from './Footer';
-
-export const AppContext = createContext({ theme: new Theme() });
+import Header from './Header';
+import { AppContext } from './AppContextProvider';
 
 class App extends Component {
   static contextType = AppContext;
@@ -17,14 +16,13 @@ class App extends Component {
 
   render() {
     return (
-      <AppContext.Provider>
-        <div className={classes.container}>
-          <div className={classes.content}>
-            <Routes />
-          </div>
-          <Footer />
+      <div className={classes.container}>
+        <Header />
+        <div className={classes.content}>
+          <Routes />
         </div>
-      </AppContext.Provider>
+        <Footer />
+      </div>
     );
   }
 }

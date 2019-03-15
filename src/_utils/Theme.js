@@ -1,7 +1,8 @@
 class Theme {
-  constructor() {
+  constructor(themeChanged) {
     this.body = document.body;
     this.currTheme = this.body.classList.contains('dark-theme') ? 'dark' : 'light';
+    this.themeChanged = themeChanged;
   }
 
   init() {
@@ -20,6 +21,7 @@ class Theme {
     this.body.classList.toggle('dark-theme');
     this.currTheme = this.currTheme === 'dark' ? 'light' : 'dark';
     localStorage.setItem('theme', this.currTheme);
+    this.themeChanged();
   }
 }
 
