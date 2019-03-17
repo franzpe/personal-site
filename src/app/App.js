@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
+import Head from './Head';
 import classes from './App.module.scss';
 import Routes from './Routes';
 import Footer from './Footer';
@@ -16,13 +17,16 @@ class App extends Component {
 
   render() {
     return (
-      <div className={classes.container}>
-        <Header />
-        <div className={classes.content}>
-          <Routes />
+      <Fragment>
+        <Head />
+        <div className={classes.container}>
+          <Header />
+          <div className={classes.content}>
+            <Routes />
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
+      </Fragment>
     );
   }
 }
