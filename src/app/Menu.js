@@ -14,7 +14,7 @@ function Menu() {
       <nav
         className={cs(classes.menu, {
           [classes.darkTheme]: context.theme.currTheme === 'dark',
-          ['hidden']: isMenuOpened
+          ['hide-on-phone']: isMenuOpened
         })}
       >
         <ul className={classes.inner}>
