@@ -1,8 +1,10 @@
 @import '../_styles/variables.scss';
 
 .menu {
+  background: #fafafa;
   border-right: 1px solid;
   margin-right: 18px;
+  z-index: 2;
 
   @media #{$media-size-phone} {
     position: absolute;
@@ -11,14 +13,6 @@
     border: none;
     margin: 0;
     padding: 10px;
-  }
-
-  &-trigger {
-    width: 24px;
-    height: 24px;
-    fill: currentColor;
-    margin-left: 10px;
-    cursor: pointer;
   }
 
   a {
@@ -33,6 +27,23 @@
     &:last-of-type {
       margin-right: 0;
     }
+  }
+}
+
+.darkTheme {
+  background: #252627;
+}
+
+.trigger {
+  display: none;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  margin-left: 10px;
+  cursor: pointer;
+
+  @media #{$media-size-phone} {
+    display: inline-block;
   }
 }
 
