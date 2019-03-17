@@ -1,3 +1,4 @@
+/* eslint no-useless-computed-key: 0 */
 import React, { Fragment, useState, useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import cs from 'classnames';

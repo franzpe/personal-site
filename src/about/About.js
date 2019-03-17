@@ -1,6 +1,8 @@
 import React from 'react';
+import { aboutSocials } from 'common/social/socials';
 
 import classes from 'common/Post.module.scss';
+import SocialList from '../common/social/SocialList';
 
 function About() {
   return (
@@ -37,6 +39,10 @@ function About() {
             facilisis. Pellentesque placerat elit a nunc. Nullam tortor odio, rutrum quis, egestas
             ut, posuere sed, felis.
           </p>
+          <h4 className={classes.subtitle}>You can find me on</h4>
+          <div style={{ margin: '0 0 1.5em' }}>
+            <SocialList socials={aboutSocials} />
+          </div>
         </div>
       </article>
       <hr />

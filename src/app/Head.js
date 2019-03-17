@@ -11,7 +11,7 @@ function Head() {
       />
       <meta
         name="keywords"
-        content="Website, Web Application, React, Frontend, Fullstack, developer"
+        content="Website, Web Application, React, Frontend, Fullstack, Web Developer, IT"
       />
       <meta name="og:url" content={window.location.origin} />
       <meta
