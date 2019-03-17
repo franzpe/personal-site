@@ -1,0 +1,98 @@
+@import '../_styles/variables.scss';
+
+.post {
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+  padding: 20px;
+  margin: 20px auto;
+
+  @media #{$media-size-tablet} {
+    max-width: 600px;
+  }
+}
+
+.date {
+  &:after {
+    content: '—';
+  }
+}
+
+.title {
+  font-size: 2.625rem;
+  margin: 20px 0 20px;
+
+  @media #{$media-size-phone} {
+    font-size: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.tags {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  opacity: 0.5;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.content {
+  margin-top: 30px;
+}
+
+.cover {
+  border-radius: 8px;
+  margin: 40px -50px;
+  width: 860px;
+  max-width: 860px;
+
+  @media #{$media-size-tablet} {
+    margin: 20px 0;
+    width: 100%;
+  }
+}
+
+.info {
+  margin-top: 30px;
+  font-size: 0.8rem;
+  line-height: normal;
+  opacity: 0.6;
+
+  p {
+    margin: 0.8em 0;
+  }
+
+  a:hover {
+    border-bottom: 1px solid white;
+  }
+
+  svg {
+    margin-right: 0.8em;
+  }
+
+  .tag {
+    margin-right: 0.5em;
+
+    &::before {
+      content: '#';
+    }
+  }
+
+  .feather {
+    display: inline-block;
+    vertical-align: -0.125em;
+    width: 1em;
+    height: 1em;
+  }
+}
+
+.flag {
+  border-radius: 50%;
+  margin: 0 5px;
+}
