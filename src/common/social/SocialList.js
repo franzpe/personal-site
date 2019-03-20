@@ -2,26 +2,25 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import SocialLink from './SocialLink';
+import classes from './SocialList.module.scss';
 
-function SocialList({ socials }) {
+function SocialList({ socials, horizontal }) {
   return (
-    <div>
+    <ul className={classes.list}>
       {socials.map(({ title, content, ...restSocial }, index) => (
-        <SocialLink
-          key={title}
-          title={title}
-          disableMargin={index === socials.length - 1}
-          {...restSocial}
-        >
-          {content}
-        </SocialLink>
+        <li key={title} className={horizontal ? classes.horizontal : ''}>
+          <SocialLink title={title} disableMargin={index === socials.length - 1} {...restSocial}>
+            {content}
+          </SocialLink>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
 
 SocialList.propTypes = {
-  socials: PropTypes.arrayOf(PropTypes.object).isRequired
+  socials: PropTypes.arrayOf(PropTypes.object).isRequired,
+  horizontal: PropTypes.bool
 };
 
 export default React.memo(SocialList);

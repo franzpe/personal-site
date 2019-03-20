@@ -7,7 +7,7 @@ import classes from './Menu.module.scss';
 import { AppContext } from './AppContextProvider';
 
 function Menu() {
-  const [isMenuOpened, setIsMenuOpened] = useState(false);
+  const [isMenuOpened, setIsMenuOpened] = useState(true);
   const context = useContext(AppContext);
 
   return (
@@ -22,9 +22,9 @@ function Menu() {
           <li>
             <NavLink to="/about">About</NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/posts">Projects</NavLink>
-          </li>
+          </li> */}
         </ul>
       </nav>
       <span className={classes.trigger} onClick={() => setIsMenuOpened(!isMenuOpened)}>

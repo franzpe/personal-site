@@ -18,8 +18,7 @@ const aboutSocials = [
       e.preventDefault();
       window.location.href =
         'mailto:pobocekfrantisek@gmail.com?subject=enquiry from website&body=Hello Frantisek, ';
-    },
-    style: { display: 'inline-block', width: '100%' }
+    }
   },
   {
     href: 'https://github.com/franzpe',
@@ -28,8 +27,7 @@ const aboutSocials = [
       <Fragment>
         <GithubSvg /> <span style={{ verticalAlign: 'super' }}> - github.com</span>
       </Fragment>
-    ),
-    style: { display: 'inline-block', width: '100%' }
+    )
   },
   {
     href: 'https://linkedin.com/in/františek-poboček-06819913b',
@@ -38,8 +36,7 @@ const aboutSocials = [
       <Fragment>
         <LinkedinSvg /> <span style={{ verticalAlign: 'super' }}> - linkedin.com</span>
       </Fragment>
-    ),
-    style: { display: 'inline-block', width: '100%' }
+    )
   },
   {
     href: 'https://twitter.com/franzpeo',
@@ -48,8 +45,7 @@ const aboutSocials = [
       <Fragment>
         <TwitterSvg /> <span style={{ verticalAlign: 'super' }}> - twitter.com</span>
       </Fragment>
-    ),
-    style: { display: 'inline-block', width: '100%' }
+    )
   }
 ];
 

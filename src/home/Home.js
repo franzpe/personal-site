@@ -9,8 +9,8 @@ function Home() {
     <div>
       <Avatar />
       <h1>František Poboček</h1>
-      <p>Frontend Web Developer with React</p>
-      <SocialList socials={homeSocials} />
+      <p>Fullstack Web Developer with React</p>
+      <SocialList socials={homeSocials} horizontal={true} />
     </div>
   );
 }
