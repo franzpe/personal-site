@@ -11,33 +11,35 @@ function About() {
         <h2 className={classes.title}>About</h2>
         <div className={classes.content}>
           <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean et est a dui semper
-            facilisis. Pellentesque placerat elit a nunc. Nullam tortor odio, rutrum quis, egestas
-            ut, posuere sed, felis. Vestibulum placerat feugiat nisl. Suspendisse lacinia, odio non
-            feugiat vestibulum, sem erat blandit metus, ac nonummy magna odio pharetra felis.
-            Vivamus vehicula velit non metus faucibus auctor. Nam sed augue. Donec orci. Cras eget
-            diam et dolor dapibus sollicitudin. In lacinia, tellus vitae laoreet ultrices, lectus
-            ligula dictum dui, eget condimentum velit dui vitae ante. Nulla nonummy augue nec pede.
-            Pellentesque ut nulla. Donec at libero. Pellentesque at nisl ac nisi fermentum viverra.
-            Praesent odio. Phasellus tincidunt diam ut ipsum. Donec eget est.
+            I'm fullstack web developer but I mainly focus on the front end side of the web
+            development building modern interactive user interfaces with ReactJS. I worked in the IT
+            corporate industry for few years but then I had realised I want to have more freedom in
+            terms of choosing my own technology stack and to have a closer relationship with my
+            customers so I could design a personalized product just for them. Than I became a
+            freelencer where I've found my real passion, which is developing modern web
+            applications.
           </p>
-          <p>Lorem makes use of a variety of open source projects including:</p>
+          <p>My main stack that I use for frontend development every day is:</p>
           <ul>
-            <li>https://github.com/russross/blackfriday</li>
-            <li>https://github.com/russross/blackfriday</li>
-            <li>https://github.com/russross/blackfriday</li>
-            <li>https://github.com/russross/blackfriday</li>
-            <li>https://github.com/russross/blackfriday</li>
+            <li>React</li>
+            <li>Redux / Apollo</li>
+            <li>HTML5</li>
+            <li>CSS3 / SASS / JSS</li>
+            <li>Javascript (ES6/ES7)</li>
+            <li>Typescript (using for bigger applications to provide typesafety)</li>
+          </ul>
+          <p>These are certifications I obtained while working at the corporate: </p>
+          <ul>
+            <li>Microsoft Certified Professional</li>
+            <li>Microsoft Technology Associate Developer</li>
+          </ul>
+          <p>Other certifications: </p>
+          <ul>
+            <li>CCNA: Network Fundamentals</li>
           </ul>
           <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean et est a dui semper
-            facilisis. Pellentesque placerat elit a nunc. Nullam tortor odio, rutrum quis, egestas
-            ut, posuere sed, felis.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean et est a dui semper
-            facilisis. Pellentesque placerat elit a nunc. Nullam tortor odio, rutrum quis, egestas
-            ut, posuere sed, felis.
+            I provide consultancy services for web development in particular for React developed
+            apps as well. So for any business inquiry feel free to contact me on my email.
           </p>
           <h4 className={classes.subtitle}>You can find me on</h4>
           <div style={{ margin: '0 0 1.5em' }}>
