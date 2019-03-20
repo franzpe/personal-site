@@ -17,6 +17,12 @@ function Header() {
         <Logo />
         <span className={classes.right}>
           <Menu />
+          <span
+            className={classes.language}
+            onClick={() => context.changeLanguage(context.langToChange)}
+          >
+            {context.langToChange}
+          </span>
           <span className={classes.themeToggle} onClick={() => context.theme.toggle()}>
             <svg
               className={classes.themeToggler}
