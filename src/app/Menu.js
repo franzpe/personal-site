@@ -5,6 +5,7 @@ import cs from 'classnames';
 
 import classes from './Menu.module.scss';
 import { AppContext } from './AppContextProvider';
+import localization from '../_utils/localization';
 
 function Menu() {
   const [isMenuOpened, setIsMenuOpened] = useState(true);
@@ -20,7 +21,7 @@ function Menu() {
       >
         <ul className={classes.inner}>
           <li>
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="/about">{localization.about}</NavLink>
           </li>
           {/* <li>
             <NavLink to="/posts">Projects</NavLink>
