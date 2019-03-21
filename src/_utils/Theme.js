@@ -9,12 +9,12 @@ class Theme {
     const theme = localStorage && localStorage.getItem('theme');
 
     if (theme) {
-      if (this.currTheme === theme) {
-        return;
+      if (this.currTheme !== theme) {
+        this.toggle();
       }
+    } else {
+      localStorage.setItem('theme', this.currTheme);
     }
-
-    this.toggle();
   }
 
   toggle() {

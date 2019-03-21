@@ -13,7 +13,8 @@ class App extends Component {
   static contextType = AppContext;
 
   componentDidMount = () => {
-    this.setupGoogleAnalytics();
+    // GDPR not solved yet
+    // this.setupGoogleAnalytics();
   };
 
   componentWillMount() {

@@ -15,13 +15,13 @@ function About() {
           <p>{localization.aboutFeStack}</p>
           <ul>
             {localization.aboutFeStackList.map(lng => (
-              <li>{lng}</li>
+              <li key={lng}>{lng}</li>
             ))}
           </ul>
           <p>{localization.aboutBeStack}</p>
           <ul>
             {localization.aboutBeStackList.map(lng => (
-              <li>{lng}</li>
+              <li key={lng}>{lng}</li>
             ))}
           </ul>
           <p>{localization.aboutp3}</p>
