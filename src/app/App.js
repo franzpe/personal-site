@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import ReactGA from 'react-ga';
+import CookieConsent from 'react-cookie-consent';
 
 import Head from './Head';
 import classes from './App.module.scss';
@@ -8,13 +9,20 @@ import Footer from './Footer';
 import Header from './Header';
 import { AppContext } from './AppContextProvider';
 import history from '../_utils/history';
+import localization from '../_utils/localization';
+import { withCookies } from 'react-cookie';
+// import Link from '../common/Link';
+import { Link } from 'react-router-dom';
 
 class App extends Component {
   static contextType = AppContext;
 
   componentDidMount = () => {
-    // GDPR not solved yet
-    // this.setupGoogleAnalytics();
+    const { cookies } = this.props;
+
+    if (Boolean(cookies.get('cookies-consent'))) {
+      this.setupGoogleAnalytics();
+    }
   };
 
   componentWillMount() {
@@ -42,9 +50,23 @@ class App extends Component {
           </div>
           <Footer />
         </div>
+        <CookieConsent
+          onAccept={this.setupGoogleAnalytics}
+          location="bottom"
+          buttonText={localization.cookieConsentBtn}
+          cookieName="cookies-consent"
+          containerClasses={classes.consent}
+          expires={150}
+        >
+          {localization.cookieConsentText}
+          &nbsp;&nbsp;&nbsp;
+          <Link to="/policy" target="_blank" style={{ textDecoration: 'underline' }}>
+            {localization.cookieConsentMore}
+          </Link>
+        </CookieConsent>
       </Fragment>
     );
   }
 }
 
-export default App;
+export default withCookies(App);

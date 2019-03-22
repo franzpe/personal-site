@@ -12,8 +12,10 @@ class AppContextProvider extends Component {
     this.theme = new Theme(() => this.setState({}));
 
     const lang = localStorage.getItem('lang');
-    if (lang && lang !== availableLangs.en) {
-      localization.setLanguage(availableLangs.sk);
+    if (lang === availableLangs.en || lang === availableLangs.sk) {
+      if (lang !== localization.getLanguage()) {
+        localization.setLanguage(lang);
+      }
     }
 
     this.state = {

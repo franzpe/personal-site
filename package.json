@@ -44,6 +44,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-app-polyfill": "^0.2.2",
+    "react-cookie": "^3.1.1",
+    "react-cookie-consent": "^2.2.2",
     "react-dev-utils": "^8.0.0",
     "react-dom": "^16.8.4",
     "react-ga": "^2.5.7",
