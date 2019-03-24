@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import ReactGA from 'react-ga';
 import CookieConsent from 'react-cookie-consent';
+import { withCookies } from 'react-cookie';
+import { Link } from 'react-router-dom';
 
 import Head from './Head';
 import classes from './App.module.scss';
@@ -10,9 +12,6 @@ import Header from './Header';
 import { AppContext } from './AppContextProvider';
 import history from '../_utils/history';
 import localization from '../_utils/localization';
-import { withCookies } from 'react-cookie';
-// import Link from '../common/Link';
-import { Link } from 'react-router-dom';
 
 class App extends Component {
   static contextType = AppContext;
@@ -60,7 +59,7 @@ class App extends Component {
         >
           {localization.cookieConsentText}
           &nbsp;&nbsp;&nbsp;
-          <Link to="/policy" target="_blank" style={{ textDecoration: 'underline' }}>
+          <Link to="/policy" style={{ textDecoration: 'underline' }}>
             {localization.cookieConsentMore}
           </Link>
         </CookieConsent>

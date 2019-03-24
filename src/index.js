@@ -15,7 +15,6 @@ ReactDOM.render(
     <AppContextProvider>
       <CookiesProvider>
         <Switch>
-          <Route path="/policy" exact={true} component={Policy} />
           <Route component={App} />
         </Switch>
       </CookiesProvider>

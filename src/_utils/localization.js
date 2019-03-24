@@ -120,7 +120,7 @@ let localization = new LocalizedStrings({
     ],
     privacyThirdPartyHeading: 'Neposkytujeme Vaše údaje tretím stranám',
     privacyThirdPartyContent: `Nepredávame, neobchodujeme ani žiadnym iným spôsobom neposkytujeme vaše osobné údaje tretím stranám. Podľa nás to nie je fér a zároveň vaše osobné údaje sú to
-    najcitlivejšie, čo nám môžete poskytnúť. Výnimkou sú príjemcovia = sprostredkovatelia, o ktorých sme vám poskytli informácie v týchto zásadách spracúvania osobných údajov a ktorí nám asistujú pri vytváraní webových stránok, spolupracujú na našich projektoch a obsluhujú vás. Títo partneri sú viazaní diskrétnosťou, sprostredkovateľskými zmluvami, zaviazali sa k mlčanlivosti, a tým súhlasili s uchovávaním vašich údajov v bezpečí, a považujú ich za dôverné. Odovzdanie vašich osobných údajov štátnym organizáciám je len na základe zákona alebo právoplatných úradných či súdnych rozhodnutí v súlade s právnymi predpismi Slovenskej republiky.`,
+    najcitlivejšie, čo nám môžete poskytnúť. Vaše osobné údaje nesprístupňujeme tretím stranám iným ako Google Analytics od spoločnosti Google. Odovzdanie vašich osobných údajov štátnym organizáciám je len na základe zákona alebo právoplatných úradných či súdnych rozhodnutí v súlade s právnymi predpismi Slovenskej republiky.`,
     privacyValid: `Tieto informácie o spracúvaní a ochrane osobných údajov sú platné od 25.5.2018.`
   }
 });
