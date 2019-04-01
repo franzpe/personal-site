@@ -23,7 +23,7 @@
 }
 
 .consent {
-  background-color: rgba(53, 53, 53, 0.9);
+  background-color: rgba(53, 53, 53, 0.95) !important;
   padding: 0 80px;
 
   @media #{$media-size-phone} {

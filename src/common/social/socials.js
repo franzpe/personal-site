@@ -30,7 +30,7 @@ const aboutSocials = [
     )
   },
   {
-    href: 'https://linkedin.com/in/františek-poboček-06819913b',
+    href: 'https://linkedin.com/in/frantisek-pobocek-06819913b',
     title: 'Linkedin',
     content: (
       <Fragment>

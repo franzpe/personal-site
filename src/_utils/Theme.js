@@ -1,7 +1,12 @@
+export const theme = {
+  DARK: 'dark',
+  LIGHT: 'light'
+};
+
 class Theme {
   constructor(themeChanged) {
     this.body = document.body;
-    this.currTheme = this.body.classList.contains('dark-theme') ? 'dark' : 'light';
+    this.currTheme = this.body.classList.contains('dark-theme') ? theme.DARK : theme.LIGHT;
     this.themeChanged = themeChanged;
   }
 
@@ -19,7 +24,7 @@ class Theme {
 
   toggle() {
     this.body.classList.toggle('dark-theme');
-    this.currTheme = this.currTheme === 'dark' ? 'light' : 'dark';
+    this.currTheme = this.currTheme === theme.DARK ? theme.LIGHT : theme.DARK;
     localStorage.setItem('theme', this.currTheme);
     this.themeChanged();
   }

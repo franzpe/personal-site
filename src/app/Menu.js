@@ -6,6 +6,7 @@ import cs from 'classnames';
 import classes from './Menu.module.scss';
 import { AppContext } from './AppContextProvider';
 import localization from '../_utils/localization';
+import { theme } from '../_utils/Theme';
 
 function Menu() {
   const [isMenuOpened, setIsMenuOpened] = useState(true);
@@ -15,7 +16,7 @@ function Menu() {
     <Fragment>
       <nav
         className={cs(classes.menu, {
-          [classes.darkTheme]: context.theme.currTheme === 'dark',
+          [classes.darkTheme]: context.theme.currTheme === theme.DARK,
           ['hide-on-phone']: isMenuOpened
         })}
       >
