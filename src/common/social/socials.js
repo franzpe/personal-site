@@ -5,6 +5,12 @@ import GithubSvg from './GithubSvg';
 import LinkedinSvg from './LinkedinSvg';
 import TwitterSvg from './TwitterSvg';
 
+const linkedinUrl = 'https://linkedin.com/in/frantisek-pobocek-06819913b';
+const twitterUrl = 'https://twitter.com/franzpeo';
+const githubUrl = 'https://github.com/franzpe';
+const mailToHref =
+  'mailto:pobocekfrantisek@gmail.com?subject=enquiry from website&body=Hello Frantisek, ';
+
 const aboutSocials = [
   {
     href: '',
@@ -16,12 +22,11 @@ const aboutSocials = [
     ),
     onClick: e => {
       e.preventDefault();
-      window.location.href =
-        'mailto:pobocekfrantisek@gmail.com?subject=enquiry from website&body=Hello Frantisek, ';
+      window.location.href = mailToHref;
     }
   },
   {
-    href: 'https://github.com/franzpe',
+    href: githubUrl,
     title: 'Github',
     content: (
       <Fragment>
@@ -30,7 +35,7 @@ const aboutSocials = [
     )
   },
   {
-    href: 'https://linkedin.com/in/frantisek-pobocek-06819913b',
+    href: linkedinUrl,
     title: 'Linkedin',
     content: (
       <Fragment>
@@ -39,7 +44,7 @@ const aboutSocials = [
     )
   },
   {
-    href: 'https://twitter.com/franzpeo',
+    href: twitterUrl,
     title: 'Twitter',
     content: (
       <Fragment>
@@ -56,18 +61,17 @@ const homeSocials = [
     content: <EmailSvg />,
     onClick: e => {
       e.preventDefault();
-      window.location.href =
-        'mailto:pobocekfrantisek@gmail.com?subject=enquiry from website&body=Hello Frantisek, ';
+      window.location.href = mailToHref;
     }
   },
-  { href: 'https://github.com/franzpe', title: 'Github', content: <GithubSvg /> },
+  { href: githubUrl, title: 'Github', content: <GithubSvg /> },
   {
-    href: 'https://linkedin.com/in/františek-poboček-06819913b',
+    href: linkedinUrl,
     title: 'Linkedin',
     content: <LinkedinSvg />
   },
   {
-    href: 'https://twitter.com/franzpeo',
+    href: twitterUrl,
     title: 'Twitter',
     content: <TwitterSvg />
   }
