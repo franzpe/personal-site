@@ -8,7 +8,6 @@ import './index.scss';
 import App from 'app/App';
 import * as serviceWorker from './_utils/serviceWorker';
 import AppContextProvider from './app/AppContextProvider';
-import Policy from './policy';
 
 ReactDOM.render(
   <Router history={history}>
