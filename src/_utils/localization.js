@@ -73,7 +73,7 @@ let localization = new LocalizedStrings({
     homeHeading: 'Fullstack vývojar webových aplikácií so zameraním na React',
     about: 'O mne',
     aboutSubtitle: 'Môžete ma nájsť na:',
-    aboutp1: `Som fullstack vývojár webových aplikácií šitých na mieru, zamieravajúci sa hlavne na frontendovú časť pri vývoji, tvorbou moderných a interaktívnych užívateľských rozhraní s vyžitím knižnice ReactJS. V minulosti som pracoval v korporátnej sfére na .Net vývoji, kde som si uvedomi, že chcem mať viacej voľnosti ohľadom voľby technológií pri vývoj a bližší kontakt so zákazníkmi aby som im vedel navrhnúť a vytvoriť produkt na mieru len pre nich. Tak som sa stal freelancerom, kde som našiel moju pravú vášeň pre tvorbu moderných webových aplikácií.`,
+    aboutp1: `Som fullstack vývojár webových aplikácií šitých na mieru, zamieravajúci sa hlavne na frontendovú časť pri vývoji, tvorbou moderných a interaktívnych užívateľských rozhraní s vyžitím knižnice ReactJS. V minulosti som pracoval v korporátnej sfére na .Net vývoji, kde som si uvedomil, že chcem mať viacej voľnosti ohľadom voľby technológií pri vývoj a bližší kontakt so zákazníkmi aby som im vedel navrhnúť a vytvoriť produkt na mieru len pre nich. Tak som sa stal freelancerom, kde som našiel moju pravú vášeň pre tvorbu moderných webových aplikácií.`,
     aboutp3:
       'Certifikácie, ktoré som získal počas práce v korporáte, kde som sa venoval .Net vývoju:',
     aboutp4: 'Iné certifikácie:',

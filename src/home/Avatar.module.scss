@@ -2,20 +2,20 @@
 
 .avatar {
   text-align: center;
+}
 
-  &__image {
-    display: inline-block;
-    width: 270px;
-    height: 270px;
+.image {
+  display: inline-block;
+  width: 270px;
+  height: 270px;
 
-    @media #{$media-size-tablet} {
-      width: 250px;
-      height: 250px;
-    }
+  @media #{$media-size-tablet} {
+    width: 250px;
+    height: 250px;
+  }
 
-    @media #{$media-size-phone} {
-      width: 210px;
-      height: 210px;
-    }
+  @media #{$media-size-phone} {
+    width: 210px;
+    height: 210px;
   }
 }

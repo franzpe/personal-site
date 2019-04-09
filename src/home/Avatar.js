@@ -14,7 +14,7 @@ function Avatar() {
       <img
         alt="avatar"
         src={context.theme.currTheme === theme.DARK ? AvatarPhotoLight : AvatarPhotoDark}
-        className={classes.avatar__image}
+        className={classes.image}
       />
     </div>
   );
