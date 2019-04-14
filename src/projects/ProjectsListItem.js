@@ -13,7 +13,7 @@ function ProjectsListItem({ match, project }) {
   return (
     <li className={classes.item}>
       <LinkBtn className={classes.link} onClick={handleClick}>
-        <img src={project.images[0]} alt={project.name} className={classes.img} />
+        <img src={project.images[0].src} alt={project.name} className={classes.img} />
       </LinkBtn>
     </li>
   );

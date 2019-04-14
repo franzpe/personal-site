@@ -5,8 +5,22 @@ export const availableLangs = {
   sk: 'sk'
 };
 
-let localization = new LocalizedStrings({
+const projectsLocalization = {
   en: {
+    personal: 'Personal project',
+    bezhistaminovo:
+      'The bezhistamine site was designed to make life easier for all those who struggle with histamine intolerance. People suffering from this intolerance have problems mainly with diet, often do not know what foods are suitable for them or are afraid to try some as well because of concern about their health.'
+  },
+  sk: {
+    personal: 'Osobný projekt',
+    bezhistaminovo:
+      'Stránka bezhistaminovo bola vytvorená v snahe uľahčiť život všetkým tým, ktorí bojujú s histamínovou intoleranciou. Ľudia trpiaci touto intoleranciou majú problémy hlavne so stravou, často nevedia, aké potraviny sú pre nich vhodné alebo sa boja niektoré čo i len vyskúšať z dôvodu obavy o ich zdravotný stav.'
+  }
+};
+
+const localization = new LocalizedStrings({
+  en: {
+    ...projectsLocalization.en,
     homeHeading: 'Fullstack Web Developer specialized in React',
     about: 'About',
     projects: 'Projects',
@@ -71,6 +85,7 @@ let localization = new LocalizedStrings({
     privacyValid: `This policy of personal data protection principles enters in force from May 25, 2018`
   },
   sk: {
+    ...projectsLocalization.sk,
     homeHeading: 'Fullstack vývojar webových aplikácií so zameraním na React',
     about: 'O mne',
     projects: 'Referencie',

@@ -1,0 +1,28 @@
+@import '../_styles/variables.scss';
+
+.carousel {
+  width: 75%;
+  margin: 0 auto;
+
+  & > div:first-child {
+    border-radius: 2% !important;
+  }
+
+  @media #{$media-size-tablet} {
+    margin: 40px 20px 0px;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.link {
+  text-decoration: underline;
+  text-align: center;
+  display: block;
+  margin-top: -20px;
+}
+
+.resetMarginAndPadding {
+  margin: 0 auto !important;
+  padding: 0 20px !important;
+}

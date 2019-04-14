@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import classes from './ProjectsList.module.scss';
 import ProjectsListItem from './ProjectsListItem';
+import localization from '_utils/localization';
 
 import bezhistaminovo1 from '_assets/images/bezhistaminovo1-min.png';
 import bezhistaminovo2 from '_assets/images/bezhistaminovo2-min.png';
@@ -9,39 +10,14 @@ import bezhistaminovo2 from '_assets/images/bezhistaminovo2-min.png';
 export const projects = [
   {
     name: 'Bezhistaminovo',
+    personal: true,
     slug: 'bezhistaminovo',
-    images: [bezhistaminovo1, bezhistaminovo2],
-    description: '1'
-  },
-  {
-    name: '2',
-    slug: 'bezhistaminovo',
-    images: [bezhistaminovo1, bezhistaminovo2],
-    description: '2'
-  },
-  {
-    name: '3',
-    slug: 'bezhistaminovo',
-    images: [bezhistaminovo1, bezhistaminovo2],
-    description: '3'
-  },
-  {
-    name: '4',
-    slug: 'bezhistaminovo',
-    images: [bezhistaminovo1, bezhistaminovo2],
-    description: '4'
-  },
-  {
-    name: '5',
-    slug: 'bezhistaminovo',
-    images: [bezhistaminovo1, bezhistaminovo2],
-    description: '5'
-  },
-  {
-    name: '6',
-    slug: 'bezhistaminovo',
-    images: [bezhistaminovo1, bezhistaminovo2],
-    description: '6'
+    url: 'https://bezhistaminovo.sk',
+    images: [
+      { name: 'Dashboard', src: bezhistaminovo1 },
+      { name: 'Recipe details', src: bezhistaminovo2 }
+    ],
+    Description: () => <p>{localization.bezhistaminovo}</p>
   }
 ];
 
