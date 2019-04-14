@@ -9,6 +9,7 @@ let localization = new LocalizedStrings({
   en: {
     homeHeading: 'Fullstack Web Developer specialized in React',
     about: 'About',
+    projects: 'Projects',
     aboutSubtitle: 'You can find me on',
     aboutp1: `I'm fullstack web developer but I mainly focus on the front end side of the web
     development building modern interactive user interfaces with ReactJS. I worked in the IT
@@ -72,6 +73,7 @@ let localization = new LocalizedStrings({
   sk: {
     homeHeading: 'Fullstack vývojar webových aplikácií so zameraním na React',
     about: 'O mne',
+    projects: 'Referencie',
     aboutSubtitle: 'Môžete ma nájsť na:',
     aboutp1: `Som fullstack vývojár webových aplikácií šitých na mieru, zamieravajúci sa hlavne na frontendovú časť pri vývoji, tvorbou moderných a interaktívnych užívateľských rozhraní s vyžitím knižnice ReactJS. V minulosti som pracoval v korporátnej sfére na .Net vývoji, kde som si uvedomil, že chcem mať viacej voľnosti ohľadom voľby technológií pri vývoj a bližší kontakt so zákazníkmi aby som im vedel navrhnúť a vytvoriť produkt na mieru len pre nich. Tak som sa stal freelancerom, kde som našiel moju pravú vášeň pre tvorbu moderných webových aplikácií.`,
     aboutp3:

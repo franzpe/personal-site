@@ -13,7 +13,7 @@ function Routes() {
       <Switch>
         <Route exact={true} path="/" component={Home} />
         <Route exact={true} path="/about" component={About} />
-        <Route exact={true} path="/posts" component={Projects} />
+        <Route path="/projects" component={Projects} />
         <Route path="/policy" exact={true} component={Policy} />
         <Route component={NotFound} />
       </Switch>

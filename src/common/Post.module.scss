@@ -6,6 +6,7 @@
   text-align: left;
   padding: 20px;
   margin: 20px auto;
+  flex: 1;
 
   @media #{$media-size-tablet} {
     max-width: 600px;

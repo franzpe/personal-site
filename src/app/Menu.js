@@ -22,11 +22,11 @@ function Menu() {
       >
         <ul className={classes.inner}>
           <li>
+            <NavLink to="/projects">{localization.projects}</NavLink>
+          </li>
+          <li>
             <NavLink to="/about">{localization.about}</NavLink>
           </li>
-          {/* <li>
-            <NavLink to="/posts">Projects</NavLink>
-          </li> */}
         </ul>
       </nav>
       <span className={classes.trigger} onClick={() => setIsMenuOpened(!isMenuOpened)}>

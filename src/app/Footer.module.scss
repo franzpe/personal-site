@@ -24,6 +24,7 @@
     align-items: center;
     font-size: 1rem;
     color: $light-color-secondary;
+    text-align: center;
 
     @media #{$media-size-tablet} {
       flex-direction: column;
