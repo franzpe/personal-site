@@ -9,12 +9,16 @@ const projectsLocalization = {
   en: {
     personal: 'Personal project',
     bezhistaminovo:
-      'The bezhistamine site was designed to make life easier for all those who struggle with histamine intolerance. People suffering from this intolerance have problems mainly with diet, often do not know what foods are suitable for them or are afraid to try some as well because of concern about their health.'
+      'The bezhistamine site was designed to make life easier for all those who struggle with histamine intolerance. People suffering from this intolerance have problems mainly with diet, often do not know what foods are suitable for them or are afraid to try some as well because of concern about their health.',
+    dontEatYourBoogers:
+      "A fun children's game created for Los Porkos s.r.o. on a mobile or tablet platform iOS and Android."
   },
   sk: {
     personal: 'Osobný projekt',
     bezhistaminovo:
-      'Stránka bezhistaminovo bola vytvorená v snahe uľahčiť život všetkým tým, ktorí bojujú s histamínovou intoleranciou. Ľudia trpiaci touto intoleranciou majú problémy hlavne so stravou, často nevedia, aké potraviny sú pre nich vhodné alebo sa boja niektoré čo i len vyskúšať z dôvodu obavy o ich zdravotný stav.'
+      'Stránka bezhistaminovo bola vytvorená v snahe uľahčiť život všetkým tým, ktorí bojujú s histamínovou intoleranciou. Ľudia trpiaci touto intoleranciou majú problémy hlavne so stravou, často nevedia, aké potraviny sú pre nich vhodné alebo sa boja niektoré čo i len vyskúšať z dôvodu obavy o ich zdravotný stav.',
+    dontEatYourBoogers:
+      'Zábavná hra pre deti, ktorá bola vytvorená pre spoločnosť Los Porkos s.r.o., na mobilnú alebo tabletovú platformu iOS a Android.'
   }
 };
 

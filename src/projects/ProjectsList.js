@@ -6,6 +6,7 @@ import localization from '_utils/localization';
 
 import bezhistaminovo1 from '_assets/images/bezhistaminovo1-min.png';
 import bezhistaminovo2 from '_assets/images/bezhistaminovo2-min.png';
+import dontEatYourBoogers from '_assets/images/DontEatYourBoogers-min.png';
 
 export const projects = [
   {
@@ -18,6 +19,14 @@ export const projects = [
       { name: 'Recipe details', src: bezhistaminovo2 }
     ],
     Description: () => <p>{localization.bezhistaminovo}</p>
+  },
+  {
+    name: 'Dont Eat Your Boogers',
+    personal: false,
+    slug: 'dont-eat-your-boogers',
+    url: 'https://boogers.losporkos.com',
+    images: [{ name: 'apple-preview', src: dontEatYourBoogers }],
+    Description: () => <p>{localization.dontEatYourBoogers}</p>
   }
 ];
 
