@@ -2,4 +2,5 @@ screening projects width: 1220px, height: full
 
 ✔ create projects page @done(19-04-14 21:41)
   ✔ content @done(19-04-14 21:41)
-  ☐ slider focus
+  ✔ carousel focus @done(19-04-15 11:52)
+☐ prerender or server side rendering

@@ -40,6 +40,7 @@ export default function ProjectDetail({ match }) {
             <Description />
           </div>
         </article>
+        <hr />
       </main>
     );
   } else {

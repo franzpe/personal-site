@@ -302,3 +302,17 @@ hr {
   width: auto;
   z-index: 100000;
 }
+
+.carousel {
+  &.carousel-slider {
+    border-radius: 2%;
+  }
+}
+
+body.dark-theme .carousel ul.thumbs li {
+  border-color: #292a2d;
+
+  &.selected {
+    border-color: rgb(255, 255, 255);
+  }
+}

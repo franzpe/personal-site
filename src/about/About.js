@@ -1,6 +1,6 @@
 import React from 'react';
-import { aboutSocials } from 'common/social/socials';
 
+import { aboutSocials } from 'common/social/socials';
 import classes from 'common/Post.module.scss';
 import SocialList from '../common/social/SocialList';
 import localization from '../_utils/localization';
