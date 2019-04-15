@@ -66,6 +66,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "postbuild": "react-snap",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
@@ -126,5 +127,14 @@
     "presets": [
       "react-app"
     ]
+  },
+  "reactSnap": {
+    "include": [
+      "/projects/bezhistaminovo",
+      "/projects/dont-eat-your-boogers"
+    ]
+  },
+  "devDependencies": {
+    "react-snap": "^1.23.0"
   }
 }

@@ -13,7 +13,8 @@ function Head() {
         name="keywords"
         content="Website, Web Application, React, Frontend, Fullstack, Web Developer, IT"
       />
-      <meta name="og:url" content={window.location.origin} />
+      <meta property="og:image" content="https://frantisekpobocek.com/preview.png" />
+      <meta property="og:url" content="https://frantisekpobocek.com" />
       <meta
         name="og:description"
         content="Are you looking for new web site, web application or consulting? You are in the right place. I develop great user experience web apps in React."

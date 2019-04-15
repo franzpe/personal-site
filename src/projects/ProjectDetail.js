@@ -1,6 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import cs from 'classnames';
+import Helmet from 'react-helmet';
 
 import localization from '_utils/localization';
 import { projects } from './ProjectsList';
@@ -14,9 +15,22 @@ export default function ProjectDetail({ match }) {
   const project = projects.find(p => p.slug === match.params.slug);
 
   if (project) {
-    const { name, personal, images, Description, url } = project;
+    const { name, personal, images, descText, Description, url } = project;
+
     return (
       <main className={cs(postClasses.post, classes.resetMarginAndPadding)}>
+        <Helmet
+          meta={[
+            { property: 'title', content: 'Frantisek Pobocek - ' + name },
+            { property: 'og:title', content: 'Frantisek Pobocek - ' + name },
+            {
+              property: 'og:url',
+              content: 'https://frantisekpobocek.com' + window.location.pathname
+            },
+            { property: 'og:image', content: 'https://frantisekpobocek.com' + images[0].src },
+            { property: 'og:description', content: descText }
+          ]}
+        />
         <article>
           <h2 className={postClasses.title}>{name}</h2>
           <div className={postClasses.content}>

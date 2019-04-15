@@ -1,11 +1,11 @@
 import React, { lazy, Suspense } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-const Home = lazy(() => import(/* webpackChunkName: "Login" */ 'home'));
-const About = lazy(() => import(/* webpackChunkName: "Login" */ 'about'));
-const Projects = lazy(() => import(/* webpackChunkName: "Login" */ 'projects'));
-const NotFound = lazy(() => import(/* webpackChunkName: "Login" */ './NotFound'));
-const Policy = lazy(() => import(/* webpackChunkName: "Login" */ 'policy'));
+const Home = lazy(() => import(/* webpackChunkName: "Home" */ 'home'));
+const About = lazy(() => import(/* webpackChunkName: "About" */ 'about'));
+const Projects = lazy(() => import(/* webpackChunkName: "Projects" */ 'projects'));
+const NotFound = lazy(() => import(/* webpackChunkName: "NotFound" */ './NotFound'));
+const Policy = lazy(() => import(/* webpackChunkName: "Policy" */ 'policy'));
 
 function Routes() {
   return (

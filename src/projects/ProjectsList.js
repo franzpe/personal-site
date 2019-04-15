@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 import classes from './ProjectsList.module.scss';
 import ProjectsListItem from './ProjectsListItem';
@@ -18,7 +18,8 @@ export const projects = [
       { name: 'Dashboard', src: bezhistaminovo1 },
       { name: 'Recipe details', src: bezhistaminovo2 }
     ],
-    Description: () => <p>{localization.bezhistaminovo}</p>
+    Description: () => <p>{localization.bezhistaminovo}</p>,
+    descText: localization.bezhistaminovo
   },
   {
     name: 'Dont Eat Your Boogers',
@@ -26,7 +27,8 @@ export const projects = [
     slug: 'dont-eat-your-boogers',
     url: 'https://boogers.losporkos.com',
     images: [{ name: 'apple-preview', src: dontEatYourBoogers }],
-    Description: () => <p>{localization.dontEatYourBoogers}</p>
+    Description: () => <p>{localization.dontEatYourBoogers}</p>,
+    descText: localization.dontEatYourBoogers
   }
 ];
 

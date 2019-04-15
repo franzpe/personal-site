@@ -1,13 +1,16 @@
 import React from 'react';
 
+import Head from 'app/Head';
+
 import { aboutSocials } from 'common/social/socials';
 import classes from 'common/Post.module.scss';
 import SocialList from '../common/social/SocialList';
 import localization from '../_utils/localization';
 
-function About() {
+export default function About() {
   return (
     <main className={classes.post}>
+      <Head />
       <article>
         <h2 className={classes.title}>{localization.about}</h2>
         <div className={classes.content}>
@@ -44,5 +47,3 @@ function About() {
     </main>
   );
 }
-
-export default About;

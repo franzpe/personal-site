@@ -9,15 +9,21 @@ import App from 'app/App';
 import * as serviceWorker from './_utils/serviceWorker';
 import AppContextProvider from './app/AppContextProvider';
 
-ReactDOM.render(
+const rootElement = document.getElementById('root');
+const appTree = (
   <Router history={history}>
     <AppContextProvider>
       <CookiesProvider>
         <App />
       </CookiesProvider>
     </AppContextProvider>
-  </Router>,
-  document.getElementById('root')
+  </Router>
 );
+
+if (rootElement.hasChildNodes()) {
+  ReactDOM.hydrate(appTree, rootElement);
+} else {
+  ReactDOM.render(appTree, rootElement);
+}
 
 serviceWorker.register();

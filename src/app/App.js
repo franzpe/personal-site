@@ -4,7 +4,6 @@ import CookieConsent from 'react-cookie-consent';
 import { withCookies } from 'react-cookie';
 import { Link } from 'react-router-dom';
 
-import Head from './Head';
 import classes from './App.module.scss';
 import Routes from './Routes';
 import Footer from './Footer';
@@ -22,12 +21,10 @@ class App extends Component {
     if (Boolean(cookies.get('cookies-consent'))) {
       this.setupGoogleAnalytics();
     }
-  };
 
-  componentWillMount() {
     const { theme } = this.context;
     theme.init();
-  }
+  };
 
   setupGoogleAnalytics = () => {
     ReactGA.initialize('UA-136592703-1');
@@ -41,7 +38,6 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <Head />
         <div className={classes.container}>
           <Header />
           <div className={classes.content}>
@@ -49,20 +45,22 @@ class App extends Component {
           </div>
           <Footer />
         </div>
-        <CookieConsent
-          onAccept={this.setupGoogleAnalytics}
-          location="bottom"
-          buttonText={localization.cookieConsentBtn}
-          cookieName="cookies-consent"
-          containerClasses={classes.consent}
-          expires={150}
-        >
-          {localization.cookieConsentText}
-          &nbsp;&nbsp;&nbsp;
-          <Link to="/policy" style={{ textDecoration: 'underline' }}>
-            {localization.cookieConsentMore}
-          </Link>
-        </CookieConsent>
+        {process.env.NODE_ENV === 'production' && navigator.userAgent !== 'ReactSnap' && (
+          <CookieConsent
+            onAccept={this.setupGoogleAnalytics}
+            location="bottom"
+            buttonText={localization.cookieConsentBtn}
+            cookieName="cookies-consent"
+            containerClasses={classes.consent}
+            expires={150}
+          >
+            {localization.cookieConsentText}
+            &nbsp;&nbsp;&nbsp;
+            <Link to="/policy" style={{ textDecoration: 'underline' }}>
+              {localization.cookieConsentMore}
+            </Link>
+          </CookieConsent>
+        )}
       </Fragment>
     );
   }
