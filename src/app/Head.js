@@ -6,17 +6,17 @@ function Head() {
     <Helmet>
       <title>Frantisek Pobocek - Web Application Developer</title>
       <meta
-        name="description"
+        property="description"
         content="Are you looking for new web site, web application or consulting? You are in the right place. I develop great user experience web apps in React."
       />
       <meta
-        name="keywords"
+        property="keywords"
         content="Website, Web Application, React, Frontend, Fullstack, Web Developer, IT"
       />
       <meta property="og:image" content="https://frantisekpobocek.com/preview.png" />
       <meta property="og:url" content="https://frantisekpobocek.com" />
       <meta
-        name="og:description"
+        property="og:description"
         content="Are you looking for new web site, web application or consulting? You are in the right place. I develop great user experience web apps in React."
       />
     </Helmet>

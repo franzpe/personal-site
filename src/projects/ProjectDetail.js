@@ -21,7 +21,6 @@ export default function ProjectDetail({ match }) {
       <main className={cs(postClasses.post, classes.resetMarginAndPadding)}>
         <Helmet
           meta={[
-            { property: 'title', content: 'Frantisek Pobocek - ' + name },
             { property: 'og:title', content: 'Frantisek Pobocek - ' + name },
             {
               property: 'og:url',
@@ -30,7 +29,9 @@ export default function ProjectDetail({ match }) {
             { property: 'og:image', content: 'https://frantisekpobocek.com' + images[0].src },
             { property: 'og:description', content: descText }
           ]}
-        />
+        >
+          <title>Frantisek Pobocek - {name}</title>
+        </Helmet>
         <article>
           <h2 className={postClasses.title}>{name}</h2>
           <div className={postClasses.content}>
