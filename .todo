@@ -5,5 +5,6 @@ screening projects width: 1220px, height: full / 976px
   ✔ carousel focus @done(19-04-15 11:52)
 ✔ prerender or server side rendering @done(19-04-15 16:58)
   ☐ find a way to add all project paths before build to package json react-snap 
-☐ make performance 
+✔ optimize performance @done(19-04-15 20:10)
+  ☐ 99-100% performance if want
 ☐ solve caching

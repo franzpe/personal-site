@@ -6,7 +6,7 @@ function Head() {
     <Helmet>
       <title>Frantisek Pobocek - Web Application Developer</title>
       <meta
-        property="description"
+        name="description"
         content="Are you looking for new web site, web application or consulting? You are in the right place. I develop great user experience web apps in React."
       />
       <meta

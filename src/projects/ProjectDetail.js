@@ -27,7 +27,8 @@ export default function ProjectDetail({ match }) {
               content: 'https://frantisekpobocek.com' + window.location.pathname
             },
             { property: 'og:image', content: 'https://frantisekpobocek.com' + images[0].src },
-            { property: 'og:description', content: descText }
+            { property: 'og:description', content: descText },
+            { name: 'description', content: descText }
           ]}
         >
           <title>Frantisek Pobocek - {name}</title>

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 
-import AvatarPhotoLight from '_assets/images/avatar_circle_light.png';
-import AvatarPhotoDark from '_assets/images/avatar_circle_dark.png';
+import AvatarPhotoLight from '_assets/images/avatar_circle_light-min.png';
+import AvatarPhotoDark from '_assets/images/avatar_circle_dark-min.png';
 import classes from './Avatar.module.scss';
 import { AppContext } from '../app/AppContextProvider';
 import { theme } from '../_utils/Theme';
