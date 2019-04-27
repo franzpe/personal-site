@@ -11,14 +11,20 @@ const projectsLocalization = {
     bezhistaminovo:
       'The bezhistamine site was designed to make life easier for all those who struggle with histamine intolerance. People suffering from this intolerance have problems mainly with diet, often do not know what foods are suitable for them or are afraid to try some as well because of concern about their health.',
     dontEatYourBoogers:
-      "A fun children's game created for Los Porkos s.r.o. on a mobile or tablet platform iOS and Android."
+      "A fun children's game created for Los Porkos s.r.o. on a mobile or tablet platform iOS and Android.",
+    cbsName: 'Credit Bureau System',
+    cbsDesc:
+      'My main resposibility was to develop backend for credit bureau system in .Net technology, adding new fatures, creating business processes, services, unit testing and modifying underlying model of Oracle database as well as making stored procedures.'
   },
   sk: {
     personal: 'Osobný projekt',
     bezhistaminovo:
       'Stránka bezhistaminovo bola vytvorená v snahe uľahčiť život všetkým tým, ktorí bojujú s histamínovou intoleranciou. Ľudia trpiaci touto intoleranciou majú problémy hlavne so stravou, často nevedia, aké potraviny sú pre nich vhodné alebo sa boja niektoré čo i len vyskúšať z dôvodu obavy o ich zdravotný stav.',
     dontEatYourBoogers:
-      'Zábavná hra pre deti, ktorá bola vytvorená pre spoločnosť Los Porkos s.r.o., na mobilnú alebo tabletovú platformu iOS a Android.'
+      'Zábavná hra pre deti, ktorá bola vytvorená pre spoločnosť Los Porkos s.r.o., na mobilnú alebo tabletovú platformu iOS a Android.',
+    cbsName: 'Úverový register',
+    cbsDesc:
+      'Mojou hlavnou úlohou bol vývoj backendu úverového registra pre krajinu Tunisko v .Net technológiach. Pacoval som na pridávaní nových funkcionalít, tvorbe business procesov, služieb, testovaniu a pretváraniu datábázového modelu ako aj tvorbe uložených procedúr v Oracle databáze.'
   }
 };
 

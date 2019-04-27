@@ -7,6 +7,7 @@ import localization from '_utils/localization';
 import bezhistaminovo1 from '_assets/images/bezhistaminovo1-min.png';
 import bezhistaminovo2 from '_assets/images/bezhistaminovo2-min.png';
 import dontEatYourBoogers from '_assets/images/DontEatYourBoogers-min.png';
+import cbs from '_assets/images/cbs-en.png';
 
 export const projects = [
   {
@@ -29,6 +30,15 @@ export const projects = [
     images: [{ name: 'apple-preview', src: dontEatYourBoogers }],
     Description: () => <p>{localization.dontEatYourBoogers}</p>,
     descText: localization.dontEatYourBoogers
+  },
+  {
+    name: localization.cbsName,
+    personal: false,
+    slug: 'credit-bureau-system',
+    url: 'https://www.crif.com/',
+    images: [{ name: 'cbs', src: cbs }],
+    Description: () => <p>{localization.cbsDesc}</p>,
+    descText: localization.cbsDesc
   }
 ];
 

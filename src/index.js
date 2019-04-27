@@ -26,4 +26,4 @@ if (rootElement.hasChildNodes()) {
   ReactDOM.render(appTree, rootElement);
 }
 
-serviceWorker.register();
+serviceWorker.unregister();
