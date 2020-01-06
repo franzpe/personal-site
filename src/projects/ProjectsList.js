@@ -1,42 +1,60 @@
-import React from 'react';
+import React from "react";
 
-import classes from './ProjectsList.module.scss';
-import ProjectsListItem from './ProjectsListItem';
-import localization from '_utils/localization';
+import classes from "./ProjectsList.module.scss";
+import ProjectsListItem from "./ProjectsListItem";
+import localization from "_utils/localization";
 
-import bezhistaminovo1 from '_assets/images/bezhistaminovo1-min.png';
-import bezhistaminovo2 from '_assets/images/bezhistaminovo2-min.png';
-import dontEatYourBoogers from '_assets/images/DontEatYourBoogers-min.png';
-import cbs from '_assets/images/cbs-en.png';
+import approvalApp1 from "_assets/images/approval_app_1-min.png";
+import approvalApp2 from "_assets/images/approval_app_2-min.png";
+import approvalApp3 from "_assets/images/approval_app_3-min.png";
+import approvalApp4 from "_assets/images/approval_app_4-min.png";
+import bezhistaminovo1 from "_assets/images/bezhistaminovo1-min.png";
+import bezhistaminovo2 from "_assets/images/bezhistaminovo2-min.png";
+import dontEatYourBoogers from "_assets/images/DontEatYourBoogers-min.png";
+import cbs from "_assets/images/cbs-en.png";
 
 export const projects = [
   {
-    name: 'Bezhistaminovo',
-    personal: true,
-    slug: 'bezhistaminovo',
-    url: 'https://bezhistaminovo.sk',
+    name: localization.approvalAppName,
+    personal: false,
+    slug: "approval-app",
+    url: "https://norderp.com",
     images: [
-      { name: 'Dashboard', src: bezhistaminovo1 },
-      { name: 'Recipe details', src: bezhistaminovo2 }
+      { name: "Dashboard", src: approvalApp1 },
+      { name: "Document details", src: approvalApp2 },
+      { name: "Dashboard mobile", src: approvalApp3 },
+      { name: "Search", src: approvalApp4 }
+    ],
+    Description: () => <p>{localization.approvalAppDesc}</p>,
+    descText: localization.approvalAppDesc
+  },
+  {
+    name: "Bezhistaminovo",
+    personal: true,
+    slug: "bezhistaminovo",
+    url: "https://bezhistaminovo.sk",
+    images: [
+      { name: "Dashboard", src: bezhistaminovo1 },
+      { name: "Recipe details", src: bezhistaminovo2 }
     ],
     Description: () => <p>{localization.bezhistaminovo}</p>,
     descText: localization.bezhistaminovo
   },
   {
-    name: 'Dont Eat Your Boogers',
+    name: "Dont Eat Your Boogers",
     personal: false,
-    slug: 'dont-eat-your-boogers',
-    url: 'https://boogers.losporkos.com',
-    images: [{ name: 'apple-preview', src: dontEatYourBoogers }],
+    slug: "dont-eat-your-boogers",
+    url: "https://boogers.losporkos.com",
+    images: [{ name: "apple-preview", src: dontEatYourBoogers }],
     Description: () => <p>{localization.dontEatYourBoogers}</p>,
     descText: localization.dontEatYourBoogers
   },
   {
     name: localization.cbsName,
     personal: false,
-    slug: 'credit-bureau-system',
-    url: 'https://www.crif.com/',
-    images: [{ name: 'cbs', src: cbs }],
+    slug: "credit-bureau-system",
+    url: "https://www.crif.com/",
+    images: [{ name: "cbs", src: cbs }],
     Description: () => <p>{localization.cbsDesc}</p>,
     descText: localization.cbsDesc
   }

@@ -130,6 +130,7 @@
   },
   "reactSnap": {
     "include": [
+      "/projects/approval-app",
       "/projects/bezhistaminovo",
       "/projects/dont-eat-your-boogers",
       "/projects/credit-bureau-system"
