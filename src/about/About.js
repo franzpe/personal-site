@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import Head from 'app/Head';
+import Head from "app/Head";
 
-import { aboutSocials } from 'common/social/socials';
-import classes from 'common/Post.module.scss';
-import SocialList from '../common/social/SocialList';
-import localization from '../_utils/localization';
+import { aboutSocials } from "common/social/socials";
+import classes from "common/Post.module.scss";
+import SocialList from "../common/social/SocialList";
+import localization from "../_utils/localization";
 
 export default function About() {
   return (
@@ -38,7 +38,7 @@ export default function About() {
           </ul>
           <p>{localization.aboutp5}</p>
           <h4 className={classes.subtitle}>{localization.aboutSubtitle}</h4>
-          <div style={{ margin: '0 0 1.5em' }}>
+          <div style={{ margin: "0 0 1.5em" }}>
             <SocialList socials={aboutSocials} />
           </div>
         </div>

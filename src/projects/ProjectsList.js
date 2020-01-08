@@ -12,6 +12,9 @@ import bezhistaminovo1 from "_assets/images/bezhistaminovo1-min.png";
 import bezhistaminovo2 from "_assets/images/bezhistaminovo2-min.png";
 import dontEatYourBoogers from "_assets/images/DontEatYourBoogers-min.png";
 import cbs from "_assets/images/cbs-en.png";
+import proxenta1 from "_assets/images/proxenta1-min.png";
+import proxenta2 from "_assets/images/proxenta2-min.png";
+import proxenta3 from "_assets/images/proxenta3-min.png";
 
 export const projects = [
   {
@@ -27,6 +30,19 @@ export const projects = [
     ],
     Description: () => <p>{localization.approvalAppDesc}</p>,
     descText: localization.approvalAppDesc
+  },
+  {
+    name: localization.proxentaAppName,
+    personal: false,
+    slug: "proxenta-questionnaire",
+    url: "https://dotaznik.proxenta.sk",
+    images: [
+      { name: "Questionnaire", src: proxenta2 },
+      { name: "Results", src: proxenta3 },
+      { name: "Login", src: proxenta1 }
+    ],
+    Description: () => <p>{localization.proxentaAppDesc}</p>,
+    descText: localization.proxentaAppDesc
   },
   {
     name: "Bezhistaminovo",

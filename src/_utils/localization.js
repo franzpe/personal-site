@@ -17,7 +17,10 @@ const projectsLocalization = {
       "My main resposibility was to develop backend for credit bureau system in .Net technology, adding new fatures, creating business processes, services, unit testing and modifying underlying model of Oracle database as well as making stored procedures.",
     approvalAppName: "Approval App",
     approvalAppDesc:
-      "I created a web application for NordERP that works within the intranet network. It is used to approve various types of documents and draws data from an extensive ERP system. In this app you can search for items, approve / reject and add purchase requests or incoming invoices. Thanks to this web application, the company has all of its orders and requests in one place."
+      "I created a web application for NordERP that works within the intranet network. It is used to approve various types of documents and draws data from an extensive ERP system. In this app you can search for items, approve / reject and add purchase requests or incoming invoices. Thanks to this web application, the company has all of its orders and requests in one place.",
+    proxentaAppName: "Proxenta Questionnaire",
+    proxentaAppDesc:
+      "For Proxenta company we have created an investment questionnaire , whose task is to create a client profile according to his experience and knowledge and then evaluate, whether it is positive or negative for the target market. It is a progressive web application, which means that after the first load it can be used offline in 100% functionality, therefore without the Internet anywhere. Thanks to this, we save the costs of unnecessary development of two applications."
   },
   sk: {
     personal: "Osobný projekt",
@@ -30,7 +33,10 @@ const projectsLocalization = {
       "Mojou hlavnou úlohou bol vývoj backendu úverového registra pre krajinu Tunisko v .Net technológiach. Pacoval som na pridávaní nových funkcionalít, tvorbe business procesov, služieb, testovaniu a pretváraniu datábázového modelu ako aj tvorbe uložených procedúr v Oracle databáze.",
     approvalAppName: "Schvaľovacia aplikácia",
     approvalAppDesc:
-      "Pre spoločnosť NordERP som vytvoril webovú aplikáciu, ktorá funguje v rámci intranetovej siete. Slúži na schvaľovanie rôznych typov dokumentov a dáta čerpá z rozsiahleho ERP systému. V tejto aplikácii je možné vyhľadávať položky, schvaľovať/zamietať aj pridávať nákupné požiadavky alebo došlé faktúry. Vďaka tejto webovej aplikácii má spoločnosť všetky svoje objednávky a požiadavky prehľadne na jednom mieste."
+      "Pre spoločnosť NordERP som vytvoril webovú aplikáciu, ktorá funguje v rámci intranetovej siete. Slúži na schvaľovanie rôznych typov dokumentov a dáta čerpá z rozsiahleho ERP systému. V tejto aplikácii je možné vyhľadávať položky, schvaľovať/zamietať aj pridávať nákupné požiadavky alebo došlé faktúry. Vďaka tejto webovej aplikácii má spoločnosť všetky svoje objednávky a požiadavky prehľadne na jednom mieste.",
+    proxentaAppName: "Proxenta investičný dotazník",
+    proxentaAppDesc:
+      "Pre spoločnosť Proxenta sme vytvorili investičný dotazník, ktorého úlohou je vytvorenie profilu klienta podľa jeho skúseností a znalostí a následne vyhodnotiť, či je pre daný cieľový trh pozitívny alebo negatívny. Jedná sa o progresívnu webovú aplikáciu, čo znamená, že po prvom načítaní sa dá v 100 percentnej funkčnosti používať offline, teda bez internetu kdekoľvek. Vďaka tomu šetríme naklady na nepotrebný vývoj dvoch aplikácií."
   }
 };
 
